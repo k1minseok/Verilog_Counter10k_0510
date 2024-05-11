@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2023.2.2 (64-bit)
+# SW Build 4126759 on Thu Feb  8 23:53:51 MST 2024
+# IP Build 4126054 on Fri Feb  9 11:39:09 MST 2024
+# SharedData Build 4115275 on Tue Jan 30 00:40:57 MST 2024
+# Start of session at: Fri May 10 15:37:15 2024
+# Process ID: 39960
+# Current directory: C:/1_Study/VerilogHDL/Vivado/0510_Counter10k/0510_Counter10k.runs/impl_1
+# Command line: vivado.exe -log UpCounter_10k.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source UpCounter_10k.tcl -notrace
+# Log file: C:/1_Study/VerilogHDL/Vivado/0510_Counter10k/0510_Counter10k.runs/impl_1/UpCounter_10k.vdi
+# Journal file: C:/1_Study/VerilogHDL/Vivado/0510_Counter10k/0510_Counter10k.runs/impl_1\vivado.jou
+# Running On: Minseok, OS: Windows, CPU Frequency: 2995 MHz, CPU Physical cores: 14, Host memory: 33919 MB
+#-----------------------------------------------------------
+source UpCounter_10k.tcl -notrace

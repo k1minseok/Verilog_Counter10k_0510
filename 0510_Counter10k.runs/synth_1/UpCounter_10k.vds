@@ -1,0 +1,271 @@
+#-----------------------------------------------------------
+# Vivado v2023.2.2 (64-bit)
+# SW Build 4126759 on Thu Feb  8 23:53:51 MST 2024
+# IP Build 4126054 on Fri Feb  9 11:39:09 MST 2024
+# SharedData Build 4115275 on Tue Jan 30 00:40:57 MST 2024
+# Start of session at: Fri May 10 16:14:06 2024
+# Process ID: 16228
+# Current directory: C:/1_Study/VerilogHDL/Vivado/0510_Counter10k/0510_Counter10k.runs/synth_1
+# Command line: vivado.exe -log UpCounter_10k.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source UpCounter_10k.tcl
+# Log file: C:/1_Study/VerilogHDL/Vivado/0510_Counter10k/0510_Counter10k.runs/synth_1/UpCounter_10k.vds
+# Journal file: C:/1_Study/VerilogHDL/Vivado/0510_Counter10k/0510_Counter10k.runs/synth_1\vivado.jou
+# Running On: Minseok, OS: Windows, CPU Frequency: 2995 MHz, CPU Physical cores: 14, Host memory: 33919 MB
+#-----------------------------------------------------------
+source UpCounter_10k.tcl -notrace
+create_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:19 . Memory (MB): peak = 487.871 ; gain = 186.844
+Command: read_checkpoint -auto_incremental -incremental C:/1_Study/VerilogHDL/Vivado/0510_Counter10k/0510_Counter10k.srcs/utils_1/imports/synth_1/UpCounter_10k.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from C:/1_Study/VerilogHDL/Vivado/0510_Counter10k/0510_Counter10k.srcs/utils_1/imports/synth_1/UpCounter_10k.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top UpCounter_10k -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 10560
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:15 . Memory (MB): peak = 1323.234 ; gain = 439.738
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'UpCounter_10k' [C:/1_Study/VerilogHDL/Vivado/0510_Counter10k/0510_Counter10k.srcs/sources_1/new/counter10k.v:3]
+INFO: [Synth 8-6157] synthesizing module 'clkDiv' [C:/1_Study/VerilogHDL/Vivado/0510_Counter10k/0510_Counter10k.srcs/sources_1/imports/new/FNDContorller.v:187]
+	Parameter MAX_COUNT bound to: 10000000 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'clkDiv' (0#1) [C:/1_Study/VerilogHDL/Vivado/0510_Counter10k/0510_Counter10k.srcs/sources_1/imports/new/FNDContorller.v:187]
+INFO: [Synth 8-6157] synthesizing module 'counter' [C:/1_Study/VerilogHDL/Vivado/0510_Counter10k/0510_Counter10k.srcs/sources_1/imports/new/FNDContorller.v:162]
+	Parameter MAX_COUNT bound to: 10000 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'counter' (0#1) [C:/1_Study/VerilogHDL/Vivado/0510_Counter10k/0510_Counter10k.srcs/sources_1/imports/new/FNDContorller.v:162]
+INFO: [Synth 8-6157] synthesizing module 'fndContorller' [C:/1_Study/VerilogHDL/Vivado/0510_Counter10k/0510_Counter10k.srcs/sources_1/imports/new/FNDContorller.v:4]
+INFO: [Synth 8-6157] synthesizing module 'clkDiv__parameterized0' [C:/1_Study/VerilogHDL/Vivado/0510_Counter10k/0510_Counter10k.srcs/sources_1/imports/new/FNDContorller.v:187]
+	Parameter MAX_COUNT bound to: 100000 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'clkDiv__parameterized0' (0#1) [C:/1_Study/VerilogHDL/Vivado/0510_Counter10k/0510_Counter10k.srcs/sources_1/imports/new/FNDContorller.v:187]
+INFO: [Synth 8-6157] synthesizing module 'counter__parameterized0' [C:/1_Study/VerilogHDL/Vivado/0510_Counter10k/0510_Counter10k.srcs/sources_1/imports/new/FNDContorller.v:162]
+	Parameter MAX_COUNT bound to: 4 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'counter__parameterized0' (0#1) [C:/1_Study/VerilogHDL/Vivado/0510_Counter10k/0510_Counter10k.srcs/sources_1/imports/new/FNDContorller.v:162]
+INFO: [Synth 8-6157] synthesizing module 'Adder_Decoder' [C:/1_Study/VerilogHDL/Vivado/0510_Counter10k/0510_Counter10k.srcs/sources_1/imports/new/FNDContorller.v:144]
+INFO: [Synth 8-226] default block is never used [C:/1_Study/VerilogHDL/Vivado/0510_Counter10k/0510_Counter10k.srcs/sources_1/imports/new/FNDContorller.v:150]
+INFO: [Synth 8-6155] done synthesizing module 'Adder_Decoder' (0#1) [C:/1_Study/VerilogHDL/Vivado/0510_Counter10k/0510_Counter10k.srcs/sources_1/imports/new/FNDContorller.v:144]
+INFO: [Synth 8-6157] synthesizing module 'digitSplitter' [C:/1_Study/VerilogHDL/Vivado/0510_Counter10k/0510_Counter10k.srcs/sources_1/imports/new/FNDContorller.v:75]
+INFO: [Synth 8-6155] done synthesizing module 'digitSplitter' (0#1) [C:/1_Study/VerilogHDL/Vivado/0510_Counter10k/0510_Counter10k.srcs/sources_1/imports/new/FNDContorller.v:75]
+INFO: [Synth 8-6157] synthesizing module 'mux' [C:/1_Study/VerilogHDL/Vivado/0510_Counter10k/0510_Counter10k.srcs/sources_1/imports/new/FNDContorller.v:91]
+INFO: [Synth 8-226] default block is never used [C:/1_Study/VerilogHDL/Vivado/0510_Counter10k/0510_Counter10k.srcs/sources_1/imports/new/FNDContorller.v:102]
+INFO: [Synth 8-6155] done synthesizing module 'mux' (0#1) [C:/1_Study/VerilogHDL/Vivado/0510_Counter10k/0510_Counter10k.srcs/sources_1/imports/new/FNDContorller.v:91]
+INFO: [Synth 8-6157] synthesizing module 'BCDtoSEG' [C:/1_Study/VerilogHDL/Vivado/0510_Counter10k/0510_Counter10k.srcs/sources_1/imports/new/FNDContorller.v:114]
+INFO: [Synth 8-226] default block is never used [C:/1_Study/VerilogHDL/Vivado/0510_Counter10k/0510_Counter10k.srcs/sources_1/imports/new/FNDContorller.v:120]
+INFO: [Synth 8-6155] done synthesizing module 'BCDtoSEG' (0#1) [C:/1_Study/VerilogHDL/Vivado/0510_Counter10k/0510_Counter10k.srcs/sources_1/imports/new/FNDContorller.v:114]
+INFO: [Synth 8-6155] done synthesizing module 'fndContorller' (0#1) [C:/1_Study/VerilogHDL/Vivado/0510_Counter10k/0510_Counter10k.srcs/sources_1/imports/new/FNDContorller.v:4]
+WARNING: [Synth 8-7071] port 'fndSel' of module 'fndContorller' is unconnected for instance 'U_FndController' [C:/1_Study/VerilogHDL/Vivado/0510_Counter10k/0510_Counter10k.srcs/sources_1/new/counter10k.v:33]
+WARNING: [Synth 8-7023] instance 'U_FndController' of module 'fndContorller' has 6 connections declared, but only 5 given [C:/1_Study/VerilogHDL/Vivado/0510_Counter10k/0510_Counter10k.srcs/sources_1/new/counter10k.v:33]
+INFO: [Synth 8-6155] done synthesizing module 'UpCounter_10k' (0#1) [C:/1_Study/VerilogHDL/Vivado/0510_Counter10k/0510_Counter10k.srcs/sources_1/new/counter10k.v:3]
+WARNING: [Synth 8-7137] Register r_tick_reg in module clkDiv has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/1_Study/VerilogHDL/Vivado/0510_Counter10k/0510_Counter10k.srcs/sources_1/imports/new/FNDContorller.v:199]
+WARNING: [Synth 8-7137] Register r_tick_reg in module clkDiv__parameterized0 has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/1_Study/VerilogHDL/Vivado/0510_Counter10k/0510_Counter10k.srcs/sources_1/imports/new/FNDContorller.v:199]
+WARNING: [Synth 8-7129] Port fndSel[1] in module fndContorller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port fndSel[0] in module fndContorller is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:20 . Memory (MB): peak = 1430.727 ; gain = 547.230
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:09 ; elapsed = 00:00:20 . Memory (MB): peak = 1430.727 ; gain = 547.230
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:20 . Memory (MB): peak = 1430.727 ; gain = 547.230
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1430.727 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/1_Study/VerilogHDL/Vivado/0510_Counter10k/0510_Counter10k.srcs/constrs_1/imports/Vivado/MY_Basys-3-Master.xdc]
+Finished Parsing XDC File [C:/1_Study/VerilogHDL/Vivado/0510_Counter10k/0510_Counter10k.srcs/constrs_1/imports/Vivado/MY_Basys-3-Master.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/1_Study/VerilogHDL/Vivado/0510_Counter10k/0510_Counter10k.srcs/constrs_1/imports/Vivado/MY_Basys-3-Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/UpCounter_10k_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/UpCounter_10k_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1513.812 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1513.812 ; gain = 0.000
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:20 ; elapsed = 00:00:42 . Memory (MB): peak = 1513.812 ; gain = 630.316
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:20 ; elapsed = 00:00:42 . Memory (MB): peak = 1513.812 ; gain = 630.316
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:20 ; elapsed = 00:00:42 . Memory (MB): peak = 1513.812 ; gain = 630.316
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:20 ; elapsed = 00:00:43 . Memory (MB): peak = 1513.812 ; gain = 630.316
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   24 Bit       Adders := 1     
+	   2 Input   17 Bit       Adders := 1     
+	   2 Input   14 Bit       Adders := 1     
+	   2 Input    2 Bit       Adders := 1     
++---Registers : 
+	               24 Bit    Registers := 1     
+	               17 Bit    Registers := 1     
+	               14 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input   24 Bit        Muxes := 1     
+	   2 Input   17 Bit        Muxes := 1     
+	   2 Input   14 Bit        Muxes := 1     
+	   4 Input    4 Bit        Muxes := 2     
+	   2 Input    2 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:30 ; elapsed = 00:01:05 . Memory (MB): peak = 1513.812 ; gain = 630.316
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:37 ; elapsed = 00:01:19 . Memory (MB): peak = 1513.812 ; gain = 630.316
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:37 ; elapsed = 00:01:19 . Memory (MB): peak = 1513.812 ; gain = 630.316
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:37 ; elapsed = 00:01:20 . Memory (MB): peak = 1513.812 ; gain = 630.316
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:43 ; elapsed = 00:01:31 . Memory (MB): peak = 1513.812 ; gain = 630.316
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:43 ; elapsed = 00:01:31 . Memory (MB): peak = 1513.812 ; gain = 630.316
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:43 ; elapsed = 00:01:31 . Memory (MB): peak = 1513.812 ; gain = 630.316
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:43 ; elapsed = 00:01:31 . Memory (MB): peak = 1513.812 ; gain = 630.316
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:43 ; elapsed = 00:01:31 . Memory (MB): peak = 1513.812 ; gain = 630.316
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:43 ; elapsed = 00:01:31 . Memory (MB): peak = 1513.812 ; gain = 630.316
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |    34|
+|3     |LUT1   |     5|
+|4     |LUT2   |    98|
+|5     |LUT3   |    38|
+|6     |LUT4   |    49|
+|7     |LUT5   |    29|
+|8     |LUT6   |    68|
+|9     |FDCE   |    57|
+|10    |FDRE   |     2|
+|11    |IBUF   |     2|
+|12    |OBUF   |    12|
++------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:43 ; elapsed = 00:01:31 . Memory (MB): peak = 1513.812 ; gain = 630.316
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:32 ; elapsed = 00:01:26 . Memory (MB): peak = 1513.812 ; gain = 547.230
+Synthesis Optimization Complete : Time (s): cpu = 00:00:43 ; elapsed = 00:01:31 . Memory (MB): peak = 1513.812 ; gain = 630.316
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.020 . Memory (MB): peak = 1513.812 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 34 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1513.812 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: 6daca040
+INFO: [Common 17-83] Releasing license: Synthesis
+44 Infos, 7 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:47 ; elapsed = 00:02:02 . Memory (MB): peak = 1513.812 ; gain = 1022.020
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 1513.812 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/1_Study/VerilogHDL/Vivado/0510_Counter10k/0510_Counter10k.runs/synth_1/UpCounter_10k.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file UpCounter_10k_utilization_synth.rpt -pb UpCounter_10k_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Fri May 10 16:16:38 2024...
